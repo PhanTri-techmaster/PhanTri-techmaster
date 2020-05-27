@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+</head>
+<body>
+<div><img src="img.jpg"></div>	
+
+<div class="box">
+<div class="text"><h1>Register suceess!</h1></div>
+<div id="kqName"></div>
+<div id="kqAddress"></div>
+<div id="kqPhone"></div>
+<div id="kqEmail"></div>
+<div id="kqPass"></div>
+<div id="kqYear"></div>
+<div id="kqGender"></div>
+</div>
+
+<script type="text/javascript">
+	function getInfo(id){
+		let str=window.location.search.slice(1);
+		let arr=str.split("&");
+		for (i=0;i<arr.length;i++){
+			let newarr = arr[i].split("=");
+			if(newarr[0]==id){
+				return newarr[1];
+			}
+		}
+	}
+
+document.getElementById("kqName").innerText="Name: "+getInfo("name").replace(/[+]/g, " ");
+document.getElementById("kqAddress").innerText="Address: "+getInfo("address").replace(/[+]/g, " ");	
+document.getElementById("kqPhone").innerText="Phone number: "+getInfo("phone");
+document.getElementById("kqEmail").innerText="Email: "+getInfo("email");
+document.getElementById("kqPass").innerText="Password: "+getInfo("pass");
+document.getElementById("kqGender").innerText="Gender: "+getInfo("gender");
+</script>
+
+</body>
+</html>

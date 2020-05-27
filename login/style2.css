@@ -1,0 +1,41 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form{
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	background-color: #00000061;
+	padding: 20px;
+}
+.text{
+	margin-top: 2px;
+	width: 200px;
+	height: 30px;
+}
+
+img{
+	width: 100%;
+}
+h2,#gender{
+	color: white;
+}
+#register{
+	width: 80px;
+	height: 20px;
+}
+select{
+	margin-top: 2px;
+	height:30px;
+}
+#register{
+	margin-top: 20px;
+}
+

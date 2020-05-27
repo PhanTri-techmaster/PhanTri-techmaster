@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+<div><img src="img.jpg"></div>
+<form action="result.html">
+<h2>Register form</h2><br/>
+<input type="text" name="name" id="name" class="text" placeholder="Name:"><br/>
+<input type="text" name="address" id="address" class="text" placeholder="Address:"><br/>
+<input type="text" name="phone" id="phone" class="text" placeholder="Phone number:"><br/>
+<input type="text" name="email" id="email" class="text" placeholder="Email:"><br/>
+<input type="Password" name="pass" id="pass" class="text" placeholder="Password:"><br/>
+<select name="day" id="day">
+</select>
+<select name="month" id="month">
+</select>
+<select name="year" id="year">
+</select><br/>
+<div id="gender">
+<input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
+<input type="radio" name="gender" id="female" value="female"><label for="female">Female</label><br/>
+</div>
+<input type="submit" name="register" id="register" value="Register">
+</form>
+
+<script type="text/javascript">
+	let year =`<option>Year</option>`;
+	for(i=1950;i<2021;i++){
+		year+=`<option value="${i}">${i}</option>`;
+	}
+	document.getElementById("year").innerHTML=year;
+
+	let day =`<option>Day</option>`;
+	for(i=1;i<32;i++){
+		day+=`<option value="${i}">${i}</option>`;
+	}
+	document.getElementById("day").innerHTML=day;
+
+	let month =`<option>Month</option>`;
+	for(i=1;i<13;i++){
+		month+=`<option value="${i}">${i}</option>`;
+	}
+	document.getElementById("month").innerHTML=month;
+</script>
+
+
+
+</body>
+</html>

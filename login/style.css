@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-decoration: none;
+	color: black;
+	box-sizing: border-box;
+}
+p{
+	color: white;
+	font-size: 48px;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form{
+	text-align: center;
+	position: absolute;
+	top: 30%;
+	background-color: #00000061;
+	padding: 20px;
+
+}
+img{
+	width: 100%;
+}
+.check{
+	color: white;
+}
+#email,#password{
+	width: 200px;
+	height: 30px;
+	margin-top: 2px;
+}
+#showPass,#remember,#login{
+	margin-top: 5px;
+}
+#login{
+	width: 80px;
+	height: 20px;
+	margin-top: 20px;
+}
+#register:hover {
+	color:#808080;
+}
+
+
+
+
+
+

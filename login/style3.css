@@ -1,0 +1,22 @@
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 20px;
+}
+
+.box{
+	text-align: center;
+	position: absolute;
+	top: 25%;
+	background-color: #00000061;
+	padding: 20px;
+}
+img{
+	width: 100%;
+}
+
+.box div{
+	margin-top: 10px;
+}

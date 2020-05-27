@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+function checkPassword(obj){
+		for(i=0;i<obj.length;i++){
+			if(obj[i]=="0"||obj[i]=="1"||obj[i]=="2"||obj[i]=="3"||obj[i]=="4"||obj[i]=="5"||obj[i]=="6"||obj[i]=="7"||obj[i]=="8"||obj[i]=="9"){
+				for(j=0;j<obj.length;j++){
+					if (obj[j]==" ") {
+						return false;
+					}
+				}
+				return true;
+			}
+		}
+		return false;
+}
+
+</script>
+</body>
+</html>
