@@ -19,8 +19,8 @@
 </div>
 
 <script type="text/javascript">
+	let str=window.location.search.slice(1);
 	function getInfo(id){
-		let str=window.location.search.slice(1);
 		let arr=str.split("&");
 		for (i=0;i<arr.length;i++){
 			let newarr = arr[i].split("=");
@@ -30,12 +30,12 @@
 		}
 	}
 
-document.getElementById("kqName").innerText="Name: "+getInfo("name").replace(/[+]/g, " ");
-document.getElementById("kqAddress").innerText="Address: "+getInfo("address").replace(/[+]/g, " ");	
-document.getElementById("kqPhone").innerText="Phone number: "+getInfo("phone");
+document.getElementById("kqName").innerText="Name: "+decodeURIComponent(getInfo("name"));
+document.getElementById("kqAddress").innerText="Address: "+decodeURIComponent(getInfo("address"));	
+document.getElementById("kqPhone").innerText="Phone number: "+decodeURIComponent(("phone"));
 document.getElementById("kqEmail").innerText="Email: "+decodeURIComponent(getInfo("email"));
-document.getElementById("kqPass").innerText="Password: "+getInfo("pass");
-document.getElementById("kqGender").innerText="Gender: "+getInfo("gender");
+document.getElementById("kqPass").innerText="Password: "+decodeURIComponent(getInfo("pass"));
+document.getElementById("kqGender").innerText="Gender: "+decodeURIComponent(getInfo("gender"));
 </script>
 
 </body>
