@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+}
+h1{
+	text-align: center;
+	color: #ffa800;
+	font-size: 60px;
+	padding-top: 50px;
+}
+
+/*---------------------------menu----------------------------------*/
+
+.anh{
+	width: 100%;
+}
+.box{
+	box-sizing: border-box;
+	font-size: 30px;
+	width: 100%;
+	color: white;
+	font-weight: bold;
+	margin-top: 100px;
+}
+.menu{
+	background: #03415e;
+	margin-top: 100px;
+}
+.menu-con a{
+	text-decoration: none;
+	margin-right: 50px;
+	color: white;
+}
+.menu-con a:hover{
+		color: #ffa800;
+	}
+.menu-con{
+	float: right;
+	padding-top: 10px;
+
+}
+.logo{
+	max-width:20%;
+	height: 50px;
+	margin-left: 20px;
+}
+
+/*-------------------------gallery1----------------------------*/
+
+.ten-album1{
+	background-color: #D43F3f;
+	width: 100%;
+	margin-top: 100px;
+	text-align: center;
+}
+.album {
+	width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+}
+
+
+
+
+/*---------------------------gallery2-------------------------------*/
+
+.ten-album2{
+	background-color: #6a9a1f;
+	width: 100%;
+	text-align: center;
+}
+
+/*----------------------------gallery3-------------------------------*/
+
+.ten-album3{
+	background-color: #ffa800;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+/*-------------------------footer--------------------------------*/
+
+.container {
+ background: white;
+ max-height: 50px;
+ margin: 0 auto;
+ padding: 5px;
+  display: flex;
+ justify-content:space-around;
+}
+.item {
+ margin-top:50px;
+ height: 50px;
+ color: black;
+ font-size: 30px;
+ margin-left: 20px;
+ margin-right: 20px;
+ text-align: center;
+}
+.icon {
+	max-height: 50px;
+}
+.container2 {
+ background: white;
+ max-height: 50px;
+ margin-top:50px;
+ padding: 5px;
+  display: flex;
+ justify-content:center;
+ width: 100%;
+}
