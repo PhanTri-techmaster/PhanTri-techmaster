@@ -5,7 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<div><img src="img.jpg"></div>
+<div class="img"><img src="img.jpg"></div>
+<button onclick="changeTheme('theme')" id="changeTheme">Change Theme</button>
 <div id="background">
 	<div id="header">Caculator by Phan Tri</div>
 	<div id="count"></div>
@@ -43,5 +44,23 @@
 
 	</div>
 </div>
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+ <script type="text/javascript">
+ function changeTheme(theme) {
+	if ($('body').hasClass('theme')) {
+		$('body').removeClass('theme')
+		$('.img').html(`<img src="img.jpg">`);
+	} else {
+		$('body').addClass('them');
+		$('.img').html(`<img src="img2.jpg">`);
+	}
+}
+ </script>
 </body>
 </html>

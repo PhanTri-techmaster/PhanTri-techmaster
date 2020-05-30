@@ -8,12 +8,11 @@
 <div><img src="img.jpg"></div>
 <form action="result.html">
 <h2>Register form</h2><br/>
-<input type="text" name="name" id="name" class="text" placeholder="Name:"><div id="error1"></div>
-<input type="text" name="address" id="address" class="text" placeholder="Address:"><div id="error2"></div>
-<input type="text" name="phone" id="phone" class="text" placeholder="Phone number:" value=""><div id="error3"></div>
-<input type="text" name="facebook" id="facebook" class="text" placeholder="Facebook:"><div id="error4"></div>
-<input type="text" name="email" id="email" class="text" placeholder="Email:"><div id="error5"></div>
-<input type="Password" name="pass" id="pass" class="text" placeholder="Password:"><div id="error6"></div>
+<input type="text" name="name" id="name" class="text" placeholder="Name:"><br/>
+<input type="text" name="address" id="address" class="text" placeholder="Address:"><br/>
+<input type="text" name="phone" id="phone" class="text" placeholder="Phone number:"><br/>
+<input type="text" name="email" id="email" class="text" placeholder="Email:"><br/>
+<input type="Password" name="pass" id="pass" class="text" placeholder="Password:"><br/>
 <select name="day" id="day">
 </select>
 <select name="month" id="month">
@@ -24,44 +23,10 @@
 <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label>
 <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label><br/>
 </div>
-<input type="button" name="" onclick="check()" value="Check">
 <input type="submit" name="register" id="register" value="Register">
 </form>
 
 <script type="text/javascript">
-	function check(){
-		let checkFace=document.getElementById("name").value;
-		if(checkFace.slice(0,25)!="https://www.facebook.com/"){
-			document.getElementById("error4").innerHTML='Facebook link is illegal,Facebook link have "https://www.facebook.com/"in the head' ;
-		}
-
-		let checkPhone=document.getElementById("phone").value;
-		for(i=0;i<checkPhone.length;i++){
-			if(checkPhone[i]!=[0-9]){
-				document.getElementById("error3").innerHTML="Phone number is illegal,Phone number a series of number and < 11 number";
-			}
-		}
-		if(checkPhone.length!=10){
-			document.getElementById("error3").innerHTML="Phone number is illegal,Phone number a series of number and < 11 number";
-		}
-		else{document.getElementById("error3").innerHTML="OK"}
-
-
-		let checkFace=document.getElementById("facebook").value;
-		if(checkFace.slice(0,25)!="https://www.facebook.com/"){
-			document.getElementById("error4").innerHTML='Facebook link is illegal,Facebook link have "https://www.facebook.com/"in the head' ;
-		}
-		else{document.getElementById("error4").innerHTML="OK"}
-
-
-		let checkEmail=document.getElementById("email").value;
-		if(checkEmail.slice(-4)!=".com"){
-			document.getElementById("error5").innerHTML='Email link is illegal,Email link have ".com"in the final' ;
-		}
-		else{document.getElementById("error5").innerHTML="OK"}
-	}
-
-
 	let year =`<option>Year</option>`;
 	for(i=1950;i<2021;i++){
 		year+=`<option value="${i}">${i}</option>`;
