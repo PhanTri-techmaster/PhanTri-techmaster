@@ -4,10 +4,24 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 }
+
 img{
 	width: 100%;
+}
+#changeTheme{
+	width: 150px;
+	height:130px;
+	background-color: #14677d;
+	padding: 0px;
+	border: 0px;
+	border-radius: 35px;
+}
+.theme #changeTheme{
+	background-color: #a86704;
+}
+button{
+	outline: none;
 }
 #header{
 	text-align: center;
@@ -18,7 +32,7 @@ img{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-gap:5px;
-	width: 200px;
+	width: 300px;
 	height: 300px;
 	margin: auto;
 }
@@ -26,13 +40,12 @@ img{
   border: 1.2px solid #4f5050;
   height: 30px;
   line-height: 30px;
-  width: 200px;
+  width: 300px;
   margin:0px auto 0px auto;
   box-sizing: border-box;
 }
 #count {
   	margin-top: 20px;
-  	width: 200px;
   	padding-left: 5px;
   	background: #FFFFCC;
   	border-bottom: #FFFFCC;
@@ -40,14 +53,13 @@ img{
 #result {
 	margin-bottom: 10px;
  	padding-right: 5px;
-  	width: 200px;
   	text-align: right;
   	background: #FFFFCC;
   	border-top: #FFFFCC;
 }
 #background{
 	background-color:#b41e1e6e;
-	width: 220px;
+	width: 320px;
 	height: 450px;
 	margin: auto;
 	position: absolute;
@@ -61,4 +73,16 @@ img{
 	top: 20px;
 	right: 20px;
 }
+.theme #background{
+	background-color: #9bccaf61;
+}
+.theme #background .container .sign{
+	background-color: #7c5a82;
+	color: white;
+}
+.theme #background .container .number{
+	background-color: #466f7c;
+	color: white;
+}
+
 
