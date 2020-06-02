@@ -1,5 +1,7 @@
 *{
-	margin: 0;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
 h1{
 	text-align: center;
@@ -12,6 +14,7 @@ h1{
 
 .anh{
 	width: 100%;
+	transition: transform 0.5s ease-in-out;
 }
 .box{
 	box-sizing: border-box;
@@ -36,12 +39,19 @@ h1{
 .menu-con{
 	float: right;
 	padding-top: 10px;
+	margin-top: 7px;
 
 }
 .logo{
 	max-width:20%;
 	height: 50px;
 	margin-left: 20px;
+}
+.anh:hover{
+	transform: scale(1.1);
+}
+.box2{
+	overflow: hidden;
 }
 
 /*-------------------------gallery1----------------------------*/
@@ -55,8 +65,8 @@ h1{
 .album {
 	width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 
 
@@ -87,14 +97,14 @@ h1{
  max-height: 50px;
  margin: 0 auto;
  padding: 5px;
-  display: flex;
+ display: flex;
  justify-content:space-around;
 }
 .item {
  margin-top:50px;
  height: 50px;
  color: black;
- font-size: 30px;
+ font-size: 15px;
  margin-left: 20px;
  margin-right: 20px;
  text-align: center;
@@ -107,7 +117,95 @@ h1{
  max-height: 50px;
  margin-top:50px;
  padding: 5px;
-  display: flex;
+ display: flex;
  justify-content:center;
  width: 100%;
 }
+.ban-quyen{
+	margin-bottom: 200px;
+}
+.item a{
+	text-decoration: none;
+}
+.item a:hover{
+	color: #ffa800;
+}
+
+
+
+/*----------------------------reponsive---------------------------------*/
+@media (max-width: 1000px){
+	.album{
+		grid-template-columns: 1fr 1fr;
+		margin:0px 20px 0px 20px;
+	}
+
+	.box,.box2{
+		display: flex;
+		justify-content: center;
+	}
+	.ten-album1,.ten-album2,.ten-album3{
+		width: 10%;
+		margin:0px 0px 0px 20px;
+	}
+	p{
+		font-size: 20px;
+		margin-top: 20px;
+	}
+	.menu-con a{
+		font-size: 15px;
+	}
+	.logo{
+		margin-left: 30px;
+	}
+	.item{
+		font-size: 13px;
+	}
+	h1{
+		font-size: 40px;
+	}
+
+}
+@media (max-width: 500px){
+	.album{
+		grid-template-columns: 1fr;
+	}
+	img{
+		width: 80% !important;
+	}
+	.box,.box2{
+		display: flex;
+		justify-content: center;
+	}
+	.ten-album1,.ten-album2,.ten-album3{
+		width: 15%;
+		margin:0px 0px 0px 20px;
+	}
+	p{
+		font-size: 12px;
+		margin-top: 20px;
+	}
+	.menu-con a{
+		font-size: 12px;
+	}
+	.logo{
+		margin-left: 30px;
+	}
+	.item{
+		font-size: 10px;
+	}
+	h1{
+		font-size: 20px;
+	}
+
+}
+@media (max-width: 400px){
+	.menu-con a{
+		font-size: 10px;
+		margin-right: 20px;
+	}
+	p{
+		font-size: 7px;
+	}
+}
+
