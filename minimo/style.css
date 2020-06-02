@@ -51,9 +51,8 @@ p{
 
 }
 .banner{
-	width: 100%;
-	max-height: 508px;
-	max-width: 1062px;
+	max-width: 100%;
+	height: auto;
 }
 .box1{
 	display: grid;
