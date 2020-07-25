@@ -2,7 +2,7 @@ extends template-part/layout.pug
 block style
     link(rel="stylesheet", href="css/tai-nguyen-mien-phi-rieng.css")
 block title
-    title Logo
+    title logoimg
 block header-content
             .header-content-tai-nguyen-mien-phi-box
                 .profile#profile3.profilea
@@ -119,18 +119,18 @@ block header-content
                                             .col-6
                                                 .d-flex.justify-content-end
                                                     div.ty-le-img
-                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check1
+                                                        .d-flex.justify-content-end.ty-le-logoimg-img.ty-le-check1
                                                             img(src="img/filter/ngang.png", alt="")
-                                                            img.ty-le-check.ty-le-check-icon-1(src="img/checkmark.png", alt="")   
-                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check2                 
+                                                            img.ty-le-check.ty-le-check-logoimg-1(src="img/checkmark.png", alt="")   
+                                                        .d-flex.justify-content-end.ty-le-logoimg-img.ty-le-check2                 
                                                             img(src="img/filter/doc.png", alt="")
-                                                            img.ty-le-check.ty-le-check-icon-2(src="img/checkmark.png", alt="")        
-                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check3             
+                                                            img.ty-le-check.ty-le-check-logoimg-2(src="img/checkmark.png", alt="")        
+                                                        .d-flex.justify-content-end.ty-le-logoimg-img.ty-le-check3             
                                                             img(src="img/filter/vuong.png", alt="")
-                                                            img.ty-le-check.ty-le-check-icon-3(src="img/checkmark.png", alt="")                      
-                                                        .d-flex.justify-content-end.ty-le-icon-img.ty-le-check4
+                                                            img.ty-le-check.ty-le-check-logoimg-3(src="img/checkmark.png", alt="")                      
+                                                        .d-flex.justify-content-end.ty-le-logoimg-img.ty-le-check4
                                                             img(src="img/filter/panorama.png", alt="")
-                                                            img.ty-le-check.ty-le-check-icon-4(src="img/checkmark.png", alt="")  
+                                                            img.ty-le-check.ty-le-check-logoimg-4(src="img/checkmark.png", alt="")  
                                             .col-6
                                                 .d-flex.justify-content-start   
                                                     .ty-le-content               
@@ -198,7 +198,7 @@ block header-content
                                                     img.filter-check.filter-check-3(src="img/checkmark.png", alt="")
                                                 .d-flex.align-items-center.phan-loai-box.phan-loai-box-4
                                                     .checkbox
-                                                    label(for='icon') Icon
+                                                    label(for='logoimg') logoimg
                                                     img.filter-check.filter-check-4(src="img/checkmark.png", alt="")
                                     .close
                                         img#close-tab(src="img/close.png", alt="")
@@ -208,7 +208,7 @@ block content
             .row.d-flex.tai-nguyen-mien-phi-content-box
                 .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/40.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/1.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -217,7 +217,36 @@ block content
                                     .d-flex.justify-content-center
                                         p File Vector
                     .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/38.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/2.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="loginviptodownload.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/3.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/4.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/5.png", alt="")
                         img.img-vip(src="img/download/star.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
@@ -227,7 +256,7 @@ block content
                                     .d-flex.justify-content-center
                                         p File Photo
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/39.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/6.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -236,68 +265,27 @@ block content
                                     .d-flex.justify-content-center
                                         p File Vector
                 .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/20.png", alt="")
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/7.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
                                     .d-flex.justify-content-center
-                                        p.small .PSD
+                                        p.small .EPS
                                     .d-flex.justify-content-center
-                                        p File Photoshop
+                                        p File Vector
                     .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/37.png", alt="")
-                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/8.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
                                     .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector
-            .row.d-flex.tai-nguyen-mien-phi-content-box
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/19.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
+                                        p.small .PNG
                                     .d-flex.justify-content-center
                                         p File Photo
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/36.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .SVG
-                                    .d-flex.justify-content-center
-                                        p File Icon
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/35.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/18.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .PSD
-                                    .d-flex.justify-content-center
-                                        p File Photo
-            .row.d-flex.tai-nguyen-mien-phi-content-box
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-12.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/10.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/9.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -306,20 +294,8 @@ block content
                                     .d-flex.justify-content-center
                                         p File Vector
                 .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-12.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/9.png", alt="")
-                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
-                                    .d-flex.justify-content-center
-                                        p File Photo
-            .row.d-flex.tai-nguyen-mien-phi-content-box
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/34.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/10.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -327,46 +303,18 @@ block content
                                         p.small .EPS
                                     .d-flex.justify-content-center
                                         p File Vector
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/33.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .PSD
-                                    .d-flex.justify-content-center
-                                        p File Photo
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/32.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
                     .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/31.png", alt="")
-                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/11.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
                                     .d-flex.justify-content-center
-                                        p.small .SVG
-                                    .d-flex.justify-content-center
-                                        p File Icon
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/30.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .PSD
+                                        p.small .PNG
                                     .d-flex.justify-content-center
                                         p File Photo
                     .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/29.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/12.png", alt="")
                         img.img-vip(src="img/download/star.png", alt="")
                         a(href="loginviptodownload.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
@@ -375,38 +323,39 @@ block content
                                         p.small .EPS
                                     .d-flex.justify-content-center
                                         p File Vector
-            .row.d-flex.tai-nguyen-mien-phi-content-box
                 .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/28.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                                .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                    div
-                                        .d-flex.justify-content-center
-                                            p.small .EPS
-                                        .d-flex.justify-content-center
-                                            p File Vector
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/17.png", alt="")
-                        a.img-tai-xuong-hover-box(href="dowload.html")
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .PSD
-                                    .d-flex.justify-content-center
-                                        p File Photo               
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/16.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/13.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
                                     .d-flex.justify-content-center
-                                        p.small .SVG
+                                        p.small .EPS
                                     .d-flex.justify-content-center
-                                        p File Icon
+                                        p File Vector
                     .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/27.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/14.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PNG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/15.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/16.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
                         a(href="loginviptodownload.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -414,69 +363,18 @@ block content
                                         p.small .EPS
                                     .d-flex.justify-content-center
                                         p File Vector
-
-            .row.d-flex.tai-nguyen-mien-phi-content-box
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/26.png", alt="")
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/17.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
                                     .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/25.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
+                                        p.small .PNG
                                     .d-flex.justify-content-center
                                         p File Photo
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/24.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
-                                    .d-flex.justify-content-center
-                                        p File Photo
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/15.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/23.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector
-            .row.d-flex.tai-nguyen-mien-phi-content-box
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-8.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/14.png", alt="")
-                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/22.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/18.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -486,16 +384,7 @@ block content
                                         p File Vector
                 .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/21.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .SVG
-                                    .d-flex.justify-content-center
-                                        p File Icon
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/13.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/19.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -503,21 +392,8 @@ block content
                                         p.small .EPS
                                     .d-flex.justify-content-center
                                         p File Vector
-            .row.d-flex.tai-nguyen-mien-phi-content-box
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-12.tai-nguyen-mien-phi-content-frame.vip-star-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/8.png", alt="")
-                        img.img-vip(src="img/loginviptodownload/star.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
-                                    .d-flex.justify-content-center
-                                        p File Photo
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-12.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-panorama/7.png", alt="")
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/20.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -525,19 +401,76 @@ block content
                                         p.small .EPS
                                     .d-flex.justify-content-center
                                         p File Vector
-            .row.d-flex.tai-nguyen-mien-phi-content-box
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/21.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
                 .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/20.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/22.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
                                     .d-flex.justify-content-center
-                                        p.small .JPG
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/23.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/24.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/25.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="loginviptodownload.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/26.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PNG
                                     .d-flex.justify-content-center
                                         p File Photo
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/19.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/27.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/28.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -546,35 +479,7 @@ block content
                                     .d-flex.justify-content-center
                                         p File Vector
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/18.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .SVG
-                                    .d-flex.justify-content-center
-                                        p File Icon
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/17.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
-                                    .d-flex.justify-content-center
-                                        p File Photo
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/16.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .SVG
-                                    .d-flex.justify-content-center
-                                        p File Icon
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/15.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/29.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -582,38 +487,8 @@ block content
                                         p.small .EPS
                                     .d-flex.justify-content-center
                                         p File Vector
-            .row.d-flex.tai-nguyen-mien-phi-content-box
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
                     .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/14.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
-                                    .d-flex.justify-content-center
-                                        p File Photo
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/12.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .EPS
-                                    .d-flex.justify-content-center
-                                        p File Vector               
-                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
-                    .col-8.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-ngang/11.png", alt="")
-                        a(href="download.html").img-tai-xuong-hover-box
-                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
-                                div
-                                    .d-flex.justify-content-center
-                                        p.small .JPG
-                                    .d-flex.justify-content-center
-                                        p File Photo
-                    .col-4.tai-nguyen-mien-phi-content-frame
-                        img.img-fluid.img-mien-phi(src="img/tainguyenmienphi-vuong/13.png", alt="")
+                        img.img-fluid.img-mien-phi(src="img/logoimg/30.png", alt="")
                         a(href="download.html").img-tai-xuong-hover-box
                             .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
                                 div
@@ -621,6 +496,295 @@ block content
                                         p.small .EPS
                                     .d-flex.justify-content-center
                                         p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/31.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/32.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/33.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/34.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="loginviptodownload.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/35.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PNG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/36.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/37.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/38.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/10.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/15.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/19.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/20.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/43.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="loginviptodownload.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/44.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PNG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/45.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/46.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/30.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/48.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/49.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/50.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/51.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/52.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="loginviptodownload.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame.vip-star-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/53.png", alt="")
+                        img.img-vip(src="img/download/star.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .PNG
+                                    .d-flex.justify-content-center
+                                        p File Photo
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/54.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/55.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/56.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/57.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                .col-12.col-sm-12.col-md-6.col-lg-6.col-xl-6.d-flex.justify-content-center
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/9.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/18.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector
+                    .col-4.tai-nguyen-mien-phi-content-frame
+                        img.img-fluid.img-mien-phi(src="img/logoimg/29.png", alt="")
+                        a(href="download.html").img-tai-xuong-hover-box
+                            .img-tai-xuong-hover.d-flex.align-items-center.justify-content-center
+                                div
+                                    .d-flex.justify-content-center
+                                        p.small .EPS
+                                    .d-flex.justify-content-center
+                                        p File Vector                                                                      
+                
+                                       
+                
         .d-flex.justify-content-center.so-trang.align-items-center
             .d-flex.align-items-center
                 a.trang1(href="")

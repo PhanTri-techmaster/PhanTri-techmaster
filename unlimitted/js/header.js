@@ -35,18 +35,21 @@ function checkTaiKhoan(userName, userPassword, obj){
         $('#exampleModal').modal('hide');
         $('.modal-backdrop').css('display','none');
         $(".yeu-cau-box2").css("display","block");
+        $(".nav-profile").css("display","block"); 
         document.querySelector(".nav-login-button").style.display="none";
     }
     else if(userName==obj[1]['name']&&userPassword==obj[1]['password']){
         userNumber=2;
         $('#exampleModal').modal('hide')
         $('.modal-backdrop').css('display','none')
+        $(".nav-profile").css("display","block"); 
         document.querySelector(".nav-login-button").style.display="none";
     }
     else if(userName==obj[2]['name']&&userPassword==obj[2]['password']){
         userNumber=3;
         $('#exampleModal').modal('hide')
         $('.modal-backdrop').css('display','none')
+        $(".nav-profile").css("display","block"); 
         document.querySelector(".nav-login-button").style.display="none";      
     }
     else {
@@ -274,11 +277,16 @@ function showDangnhap1(){
 $('.thanh-toan-button').on("click", thanhToan);
 function thanhToan(){
     if(userNumber==1||userNumber==2||userNumber==3){
-        $('.tai-khoan-ngan-hang').html('<div><p class="small chuc-mung">Chúc mừng bạn đã thanh toán thành công!</p></div>')       
+        $('.tai-khoan-ngan-hang').html('<div><p class="small chuc-mung">Chúc mừng bạn đã thanh toán thành công!</p>')       
     }
     else{
         $('#exampleModal').modal('show');
     }
+}
+
+
+if(userNumber!=1&userNumber!=2&userNumber!=3){
+    $(".nav-profile").css("display","none");  
 }
 
 

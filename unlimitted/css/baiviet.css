@@ -54,4 +54,15 @@
 .support-box-border{
     border-right: 1px solid #D9D9D9;
 }
-
+.support-text{
+    margin-top: 10px;
+}
+.ten-bai-viet{
+    text-align: center;
+}
+.bai-viet-weight{
+    font-weight: bold;
+}
+.mo-dau-bai-viet{
+    margin: 100px 0 50px 0;
+}
