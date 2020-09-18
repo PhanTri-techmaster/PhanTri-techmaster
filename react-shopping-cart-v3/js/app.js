@@ -89,6 +89,7 @@ function App() {
     remove=deleteProduct;
     let newProduct=products.filter(product=>product.id!=remove.id)
     setProducts(newProduct);
+    setShowModal(false)
   }
   
 
