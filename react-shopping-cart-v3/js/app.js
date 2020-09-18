@@ -81,7 +81,7 @@ function App() {
     let eventValue=event.target.value;
     let newProduct=[...products];
     let findProduct=products.findIndex(product=>product.id==productId);
-    newProduct[findProduct].quantity=fadeIn(eventValue);
+    newProduct[findProduct].quantity=parseInt(eventValue);
     setProducts(newProduct);
   }
 
